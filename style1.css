@@ -1,0 +1,158 @@
+/* google Fonts  Links */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Righteous&display=swap");
+
+/* Reset CSS Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+/* Defining Custom Variables */
+
+:root {
+  --primary-color: #3b141c;
+  --secondary-color: #f3961c;
+
+  /* Webiste Max-width */
+
+  --site-max-width: 1300px;
+}
+
+/* styling for whole site */
+
+a{
+    text-decoration: none;
+}
+
+ul li{
+
+    list-style: none;
+}
+
+/* Styling the header position */
+
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    width: var(--site-max-width);
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    
+}
+
+nav .nav_logo a{
+    display: flex;
+    align-items: center;
+}
+
+nav .nav_logo h2{
+    font-size: 32px;
+    color: #fff;
+}
+
+nav ul{
+    display: flex;
+    gap: 10px;
+}
+
+nav ul li{
+    padding: 12px 32px;
+    border-radius: 50px;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+nav ul li:hover{
+    background-color:var(--secondary-color) ;
+}
+
+nav ul li a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    
+}
+
+.button{
+    padding: 8px 28px;
+    border: 3px solid transparent;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50px;
+    background: var(--secondary-color);
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.4s ease;
+}
+
+.button:hover{
+    background: transparent;
+    border: 3px solid #fff;
+}
+
+.section_container{
+    width: var(--site-max-width);
+    margin: 0 auto;
+}
+
+.hero_section{
+    margin-top: 80px;
+    background-color: var(--primary-color);
+    height: calc(100vh - 80px);
+}
+
+.hero_container{
+     display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+.hero_container .text_section h2{
+    font-size: 40px;
+    color: var(--secondary-color);
+}
+
+.hero_container .text_section h3{
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 8px;
+}
+
+.hero_container .text_section p{
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+    margin: 24px 0;
+
+}
+
+.hero_container .text_section .hero_section_button{
+    display: flex;
+    gap: 24px;
+}
+
+.hero_section .image_section{
+    max-width: 45%;
+}
+
+.hero_container .image_section img{
+    width: 100%;
+}
+
